@@ -22,33 +22,6 @@ $(function nav(){
     });
 });
 
-/*
-$(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    var btn_menu = '.btn_menu span';
-    var body = $('body');
-
-    if (scroll >= 900) {
-        body.find(btn_menu).removeClass('color_light');
-        body.find(btn_menu).addClass('color_dark');
-    }
-    else {
-        body.find(btn_menu).removeClass('color_dark');
-        body.find(btn_menu).addClass('color_light');
-    }
-});
-/*
-$(window).scroll(function() {
-    var scroll2 = $(window).scrollTop();
-
-    if (scroll2 >= 750) {
-        $('.btn_down').hide();
-    }
-    else {
-        $('.btn_down').show();
-    }
-}); */
-
 $('a[href*="#"]').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         var target = $(this.hash);
@@ -69,6 +42,8 @@ var scroll2 = $(window).scrollTop();
 var h = document.documentElement.clientHeight;
 
 function change_color () {
+    
+    setInterval(change_color, 50);
 
     var btn_menu = '.btn_menu span';
     var body = $('body');
@@ -82,7 +57,7 @@ function change_color () {
         body.find(btn_menu).addClass('color_light');
     }
 }
-setInterval(change_color, 50);
+
 
 
 
