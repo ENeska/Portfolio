@@ -3,6 +3,12 @@ $('.js_btn_menu').click(function() {
     $('#js_nav').toggleClass('open');
 });
 
+
+$('nav').find('a').click(function() {
+    $('.js_btn_menu').removeClass('active');
+    $('#js_nav').removeClass('open');
+});
+
 $(function nav(){
 
     $('.text').on('mouseover', function () {
@@ -22,6 +28,7 @@ $(function nav(){
     });
 });
 
+
 $('a[href*="#"]').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         var target = $(this.hash);
@@ -38,28 +45,23 @@ $('a[href*="#"]').click(function() {
 
 /* Zmiana koloru hamburgera */
 
-var scroll2 = $(window).scrollTop();
 var h = document.documentElement.clientHeight;
 
-function change_color () {
-    
-    setInterval(change_color, 50);
+window.onscroll = function() {change_color()};
 
+function change_color() {
     var btn_menu = '.btn_menu span';
     var body = $('body');
 
-    if (scroll2 >= h) {
+    if (document.body.scrollTop > h || document.documentElement.scrollTop > h) {
         body.find(btn_menu).removeClass('color_light');
         body.find(btn_menu).addClass('color_dark');
-    }
-    else {
+
+    } else {
         body.find(btn_menu).removeClass('color_dark');
         body.find(btn_menu).addClass('color_light');
     }
 }
-
-
-
 
 
 
