@@ -79,15 +79,41 @@
 }
 
 .btn_down {
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
+
     border: 1px solid #FF9800;
     width: 60px;
+    position: absolute;
     height: 60px;
     z-index: 13;
     transition: 0.5s;
+
 }
+
+.dwn {
+    margin: 0 auto;
+    top:82vh;
+
+}
+
+/*
+header {
+    color: white;
+    position: absolute;
+    padding-top: 50vh;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+header:before {
+    content: '';
+    position: absolute;
+    width:2px;
+    height: 25rem;
+    background: #FF9800;
+    left: -20px;
+}
+*/
+
 
 .btn_down:hover {
     cursor: pointer;
@@ -234,18 +260,22 @@ a:hover:after {
 header {
     color: white;
     position: absolute;
-    top: 60%;
-    left: 20%;
+    top: 50vh;
+    margin: 0 auto;
     padding-bottom: 1rem;
+    left: 30px;
+
+
 }
 
 header:before {
     content: '';
     position: absolute;
     width:2px;
-    min-height: 100%;
+    height: 100%;
     background: #FF9800;
-    left: -20px;
+    left: -18px;
+
 }
 
 h1 {
@@ -274,7 +304,7 @@ h2 span {
 
 header p {
     letter-spacing: 0.12rem;
-    margin-left: 2rem;
+
 }
 
 header p span {
