@@ -63,6 +63,7 @@ $('a[href*="#"]').click(function() {
 });
 
 
+/* Zmiana koloru hamburgera */
 
 var scroll2 = $(window).scrollTop();
 var h = document.documentElement.clientHeight;
