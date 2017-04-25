@@ -14,7 +14,13 @@
     height: 60px;
     z-index: 100;
     border: 1px solid #FF9800;
+   
 }
+
+.btn_menu:hover {
+     transition: 1s;
+}
+     
 
 .btn_menu:hover {
     cursor: pointer;
