@@ -3,7 +3,6 @@ $('.js_btn_menu').click(function() {
     $('#js_nav').toggleClass('open');
 });
 
-
 $('nav').find('a').click(function() {
     $('.js_btn_menu').removeClass('active');
     $('#js_nav').removeClass('open');
@@ -42,9 +41,6 @@ $('a[href*="#"]').click(function() {
     }
 });
 
-
-/* Zmiana koloru hamburgera */
-
 var h = document.documentElement.clientHeight;
 
 window.onscroll = function() {change_color()};
@@ -63,8 +59,6 @@ function change_color() {
     }
 }
 
-
-
 $(function portfolio(){
 
     $('.describe').on('mouseover', function () {
@@ -75,8 +69,6 @@ $(function portfolio(){
         $(this).removeClass('open');
         $(this).addClass('close');
     });
-
-
 });
 
 $(function contact(){
@@ -84,18 +76,13 @@ $(function contact(){
     $('.option').on('mouseover', function () {
         $(this).find('a').removeClass('dark_font');
         $(this).find('a').addClass('light_font');
-
     });
 
     $('.option').on('mouseout', function () {
 
         $(this).find('a').removeClass('light_font');
         $(this).find('a').addClass('dark_font');
-
-
     });
-
-
 });
 
 
