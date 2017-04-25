@@ -1,3 +1,4 @@
+
 $('.js_btn_menu').click(function() {
     $(this).toggleClass('active');
     $('#js_nav').toggleClass('open');
@@ -7,6 +8,8 @@ $('nav').find('a').click(function() {
     $('.js_btn_menu').removeClass('active');
     $('#js_nav').removeClass('open');
 });
+
+
 
 $(function nav(){
 
@@ -26,7 +29,6 @@ $(function nav(){
         $(this).addClass('light')
     });
 });
-
 
 $('a[href*="#"]').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -62,6 +64,7 @@ function change_color() {
 $(function portfolio(){
 
     $('.describe').on('mouseover', function () {
+        $(this).removeClass('close');
         $(this).addClass('open');
     });
 
