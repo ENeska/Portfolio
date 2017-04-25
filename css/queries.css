@@ -1,0 +1,169 @@
+
+/* Extra Large */
+
+@media only screen and (min-width: 1201px){
+
+    header {
+        top: 50vh;
+        left: 40px;
+    }
+
+    .dwn {
+        left: 20px;
+    }
+
+    .picture img {
+        width: 60%;
+    }
+
+    .picture {
+        justify-content: flex-end;
+    }
+
+    .describe ul li {
+        font-size: 100%;
+    }
+
+    .contact h4 {
+        padding: 5rem 0 3rem 0;
+    }
+
+    .btn_up {
+        margin-top: 10rem;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+
+    header {
+        top: 50vh;
+        left: 40px;
+    }
+
+    .dwn {
+        left: 20px;
+    }
+
+    .picture img {
+        width: 60%;
+    }
+
+    .picture {
+        justify-content: flex-end;
+    }
+
+    .describe ul li {
+        font-size: 100%;
+    }
+
+    .contact h4 {
+        padding: 5rem 0 3rem 0;
+    }
+
+    .btn_up {
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width: 992px){
+
+    header {
+        top: 43vh;
+        left: 40px;
+    }
+
+    .dwn {
+        left: 20px;
+    }
+
+    .picture img {
+        width: 60%;
+    }
+
+    .picture {
+        justify-content: flex-end;
+    }
+
+    .describe ul li {
+        font-size: 72%;
+    }
+
+    .contact h4 {
+        padding: 3rem 0 3rem 0;
+    }
+
+    .btn_up {
+        margin-top: 6rem;
+    }
+}
+
+
+
+@media  (max-width: 767px){
+
+    header {
+        top: 40vh;
+        left: 20px;
+    }
+
+    .dwn {
+        left: 0;
+    }
+
+    .picture img {
+        width: 20%;
+    }
+
+    .picture {
+        justify-content: flex-start;
+    }
+
+    .describe ul li {
+        font-size: 100%;
+    }
+
+    .contact h4 {
+        padding: 3rem 0 3rem 0;
+    }
+
+    .btn_up {
+        margin-top: 4.5rem;
+    }
+}
+
+
+@media  (max-width: 576px){
+
+    header {
+        top: 30vh;
+        left: 0;
+    }
+
+    .dwn {
+        left: -20px;
+    }
+
+    .picture img {
+        width: 20%;
+    }
+
+    .picture {
+        justify-content: flex-start;
+    }
+
+    .describe ul li {
+        font-size: 80%;
+    }
+
+    .contact h4 {
+        padding: 3rem 0 3rem 0;
+    }
+
+    .btn_up {
+        margin-top: 3rem;
+    }
+}
+
+
+
+

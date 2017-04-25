@@ -65,8 +65,37 @@ function change_color() {
 
 
 
+$(function portfolio(){
+
+    $('.describe').on('mouseover', function () {
+        $(this).addClass('open');
+    });
+
+    $('.describe').on('mouseout', function () {
+        $(this).removeClass('open');
+        $(this).addClass('close');
+    });
 
 
+});
 
+$(function contact(){
+
+    $('.option').on('mouseover', function () {
+        $(this).find('a').removeClass('dark_font');
+        $(this).find('a').addClass('light_font');
+
+    });
+
+    $('.option').on('mouseout', function () {
+
+        $(this).find('a').removeClass('light_font');
+        $(this).find('a').addClass('dark_font');
+
+
+    });
+
+
+});
 
 

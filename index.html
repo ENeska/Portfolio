@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -35,7 +36,7 @@
                 <li><a href="#main_page">Strona główna</a></li>
                 <li><a href="#">O mnie</a></li>
                 <li><a href="#skills">Umiejętności</a></li>
-                <li><a href="#">Portfolio</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#">Kontakt</a></li>
             </ul>
         </nav>
@@ -45,77 +46,242 @@
 
         <header class="col-9">
             <h1>Elżbieta <span>Neska</span> </h1>
-            <h2> <span>&#60;h2&#62;</span>Junior Front-End Developer <span>&#60;h2&#62;</span></h2>
-            <p> <span>&#60;p&#62;</span> logistyk, który pół roku temu podjął wyzwanie przebranżowienia się <span>&#60;p&#62;</span></p>
-            <p> <span>&#60;p&#62;</span> zafascynowany światem Front-End'u, pełen entuzjazmu dla nowej pasji <span>&#60;p&#62;</span></p>
+            <h2> <span>&#60;h2&#62;</span>Junior Front-End Developer <span>&#60;&#8260;h2&#62;</span></h2>
+            <p> <span>&#60;p&#62;</span> logistyk, który pół roku temu podjął wyzwanie przebranżowienia się <span>&#60;&#8260;p&#62;</span></p>
+            <p> <span>&#60;p&#62;</span> zafascynowany światem Front-End'u, pełen entuzjazmu dla nowej pasji <span>&#60;&#8260;p&#62;</span></p>
         </header>
 
     </section>
 
-
     <section class="skills" id="skills">
-        <div class="content col-9">
+        <div class="content col-xl-9">
             <h3>Umiejętności</h3>
-            <article class="first">
-                <div class="row">
-                    <div class="picture col-2">
+
+            <article>
+
+                <div class="row row_skills">
+                    <div class="picture col-md-2">
                         <img src="image/html5.svg">
                     </div>
-                    <div class="text light html col-4">
+
+                    <div class="text light col-md-4">
                         <h4 class="normal_font">HTML5</h4>
                         <p>Dobra znajomość podstaw języka, korzystanie z nowych standardów HTML5: header, section, footer, aside, nav, figure, a także typów pól: email, number, date oraz atrybutów: required, min/max, autocomplete dla elementów.</p>
                     </div>
-                    <div class="picture col-2">
+
+                    <div class="picture col-md-2">
                         <img src="image/css3.svg">
                     </div>
-                    <div class="text light css col-4">
+
+                    <div class="text light col-md-4">
                         <h4 class="normal_font">CSS3</h4>
                         <p>Bardzo dobra znajomość reguł stylów CSS, pozycjonowanie stron za pomocą flexbox. Budowa responsywnych stron z użyciem media queries. W trakcie nauki tworzenia animacji za pomocą CSS z wykorzystaniem transition, transform oraz @keyframes.</p>
                     </div>
+
                 </div>
+
             </article>
 
-            <article class="first">
-                <div class="row">
-                    <div class="picture col-2">
+            <article >
+                <div class="row row_skills">
+                    <div class="picture col-md-2">
                         <img src="image/js-file%20(1).svg">
                     </div>
-                    <div class="text light js col-4">
+                    <div class="text light col-md-4">
                         <h4 class="normal_font">Javascript</h4>
                         <p>Sprawne poruszanie się po drzewie modelu DOM. Tworzenie funkcji z wykorzystaniem poleceń warunkowych (if-else, switch) oraz pętli.</p>
                     </div>
 
-                    <div class="picture col-2">
+                    <div class="picture col-md-2">
                         <img src="image/jquery-icon%20(1).svg">
                     </div>
-                    <div class="text light jq col-4">
+                    <div class="text light col-md-4">
                         <h4 class="normal_font">jQuery</h4>
                         <p>Sprawna obsługa zdarzeń: scroll, animation, click, focus, change, mouseover, mouseout, remove/addClass, toggleClass, fadeIn/Out, slideDown/Up, slideToggle, show/hide, text. Implementacja do projektów - Google Maps oraz Datepicker.</p>
                     </div>
                 </div>
             </article>
 
-            <article class="first">
-                <div class="row">
-                    <div class="picture col-2">
+            <article>
+                <div class="row row_skills">
+                    <div class="picture col-md-2">
                         <img src="image/bootstrap-icon.svg">
                     </div>
-                    <div class="text light bootstrap col-4">
+                    <div class="text light col-md-4">
                         <h4 class="normal_font">Bootstrap</h4>
                         <p>Korzystanie z siatki Bootstrapa oraz gotowych elementów.</p>
                     </div>
-                    <div class="picture col-2">
+                    <div class="picture col-md-2">
                         <img src="image/github-logo.svg">
                     </div>
-                    <div class="text light github col-4">
+                    <div class="text light col-md-4">
                         <h4 class="normal_font">Github</h4>
                         <p>W trakcie </p>
                     </div>
                 </div>
             </article>
-
         </div>
     </section>
+
+    <section id="portfolio">
+
+        <div class="content col-xl-9">
+            <h3>Portfolio</h3>
+
+            <article class="image_portfolio row">
+
+            <div class="col-md-6">
+
+                <div class="portfolio_row col-md-12 row">
+                    <img class="image4" src="image/first_image2.png">
+                    <div class="describe">
+                        <ul>
+                            <li> <span class="ion-checkmark"> </span>html</li>
+                            <li><span class="ion-checkmark"> </span>css</li>
+                            <li><span class="ion-checkmark"> </span>javascript</li>
+                            <li><span class="ion-checkmark"> </span>rwd</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="link_row row col-md-12">
+                    <div>
+                        <a href="https://eneska.github.io/Project_1/"><span class="ion-eye"></span></a>
+                        <span class="describe_link">&#60;Obejrzyj&#62;</span>
+                    </div>
+                    <div>
+                        <a href="https://github.com/ENeska/Project_1"><span class="ion-social-github"></span></a>
+                        <span class="describe_link">&#60;Github&#62;</span>
+                    </div>
+                </div>
+
+            </div>
+
+                <div class="col-md-6 portfolio_col">
+
+                    <div class="portfolio_row col-md-12 row">
+                        <img class="image4" src="image/second_image2.png">
+                        <div class="describe">
+                            <ul>
+                                <li> <span class="ion-checkmark"> </span>html</li>
+                                <li><span class="ion-checkmark"> </span>css</li>
+                                <li><span class="ion-checkmark"> </span>jquery</li>
+                                <li><span class="ion-checkmark"> </span>rwd</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="link_row row col-md-12">
+                        <div>
+                            <a href="https://eneska.github.io/Project_2/"><span class="ion-eye"></span></a>
+                            <span class="describe_link">&#60;Obejrzyj&#62;</span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/ENeska/Project_2"><span class="ion-social-github"></span></a>
+                            <span class="describe_link">&#60;Github&#62;</span>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+            <article class="image_portfolio row">
+
+                <div class="col-md-6">
+
+                    <div class="portfolio_row col-md-12 row">
+                        <img class="image4" src="image/third_image2.png">
+                        <div class="describe">
+                            <ul>
+                                <li> <span class="ion-checkmark"> </span>html</li>
+                                <li><span class="ion-checkmark"> </span>css</li>
+                                <li><span class="ion-checkmark"> </span>jquery</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="link_row row col-md-12">
+                        <div>
+                            <a href="https://eneska.github.io/Project_3/"><span class="ion-eye"></span></a>
+                            <span class="describe_link">&#60;Obejrzyj&#62;</span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/ENeska/Project_3"><span class="ion-social-github"></span></a>
+                            <span class="describe_link">&#60;Github&#62;</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 portfolio_col">
+
+                    <div class="portfolio_row col-md-12 row">
+                        <img class="image4" src="image/fourth_image2.png">
+                        <div class="describe">
+                            <ul>
+                                <li> <span class="ion-checkmark"> </span>html</li>
+                                <li><span class="ion-checkmark"> </span>css</li>
+                                <li><span class="ion-checkmark"> </span>psd</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="link_row row col-md-12">
+                        <div>
+                            <a href="https://eneska.github.io/Project_4/"><span class="ion-eye"></span></a>
+                            <span class="describe_link">&#60;Obejrzyj&#62;</span>
+                        </div>
+                        <div>
+                            <a href="https://github.com/ENeska/Project_4"><span class="ion-social-github"></span></a>
+                            <span class="describe_link">&#60;Github&#62;</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </article>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="content col-lg-9">
+            <h3>Kontakt</h3>
+            <article class="contact_describe">
+
+                <div class="contact">
+                    <p> <span>&#60;p&#62;</span> Jeżeli masz więcej pytań o umiejętności które posiadam... <span>&#60;&#8260;p&#62;</span></p>
+                    <p><span>&#60;p&#62;</span> lub po prostu potrzebujesz więcej informacji... <span>&#60;&#8260;p&#62;</span></p>
+                    <h4><span>&#60;h4&#62;</span> Zapraszam do kontaktu <span>&#60;&#8260;h4&#62;</span></h4>
+                </div>
+
+                <div class="contact_option row">
+                    <a href="mailto:ela.neska@wp.pl" class="dark_font">
+                        <div class="option">
+                            <p><span class="ion-android-mail"> </span>ela.neska[at]wp.pl</p>
+                        </div>
+                    </a>
+                    <a href="tel:+48660485687" class="dark_font">
+                        <div class="option">
+                            <p><span class="ion-ios-telephone"></span> +48 660 485 687</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="btn_up">
+                    <a href="#main_page">
+                        <div class="btn_down js_btn_down">
+                            <span class="left color_dark"></span>
+                            <span class="right color_dark"></span>
+                        </div>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <p><span>Elżbieta Neska &#169 2017. </span><span>Wszelkie prawa zastrzeżone.</span></p>
+    </footer>
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/modernizr-2.8.3.min.js"></script>
