@@ -527,17 +527,15 @@ h3:after {
     transition-delay: 0.2s;
     -moz-transition-delay: 0.2s;
 }
-
-.describe:hover {
+.portfolio_row:hover .describe {
     width: 0;
 }
 
-.describe:hover ul li {
+.portfolio_row:hover ul li {
     -ms-transform: translateX(200px);
     transform: translateX(200px);
     transition: 0.9s;
 }
-
 /* Section Portfolio Icons */
 
 .ion-eye, .ion-social-github {
