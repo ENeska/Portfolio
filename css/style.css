@@ -343,6 +343,7 @@ section {
     width: 100%;
     min-height: 100vh;
     margin: 0 auto;
+    position: relative;
 }
 
 .row_skills {
@@ -527,6 +528,7 @@ h3:after {
     transition-delay: 0.2s;
     -moz-transition-delay: 0.2s;
 }
+
 .portfolio_row:hover .describe {
     width: 0;
 }
@@ -536,6 +538,7 @@ h3:after {
     transform: translateX(200px);
     transition: 0.9s;
 }
+
 /* Section Portfolio Icons */
 
 .ion-eye, .ion-social-github {
@@ -565,10 +568,12 @@ h3:after {
 
 .contact_describe {
     padding-left: 2.5rem;
-    position: absolute;
+    position: relative;
     top: 30%;
     color: #333333;
     font-weight: 500;
+    background: lightslategray;
+    min-height: 100%;
 }
 
 .contact_describe:after {
@@ -637,8 +642,9 @@ h3:after {
 /* Button up */
 
 .btn_up {
-    position: absolute;
+    margin-top: 2rem;
     margin-left: -1rem;
+
 }
 
 .btn_up .right {
