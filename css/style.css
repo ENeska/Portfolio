@@ -130,17 +130,14 @@
 .btn_down {
     border: 1px solid #FF9800;
     width: 60px;
-    position: absolute;
+    position: relative;
     height: 60px;
     z-index: 13;
     transition-duration: 3s;
     transition-property:  all;
 }
 
-.dwn {
-    margin: 0 auto;
-    top:82vh;
-}
+
 
 .btn_down:hover {
     cursor: pointer;
@@ -564,23 +561,115 @@ h3:after {
     font-size: 0.8rem;
 }
 
-/* Section Contact */
-
 .contact_describe {
-    padding-left: 2.5rem;
-    position: relative;
+    background-color: green;
+    width: 100%;
+    height: auto;
     top: 30%;
-    color: #333333;
-    font-weight: 500;
-    background: lightslategray;
-    min-height: 100%;
+    position: absolute;
+
 }
 
 .contact_describe:after {
     content: '';
     position: absolute;
     width:2px;
-    height: 100%;
+    height: 65%;
+    background: #FF9800;
+    left: 1rem;
+    top:0;
+}
+
+.contact, .contact_option{
+    left: 30px;
+    position: relative;
+}
+
+
+.contact p {
+    font-size: 120%;
+    padding: 0.5rem 0 1rem 0;
+    letter-spacing: 0.1rem;
+}
+
+.contact span {
+    font-weight: 300;
+    font-size: 80%;
+    color: #3f7fb4;
+}
+
+.contact h4 {
+    font-size: 150%;
+    letter-spacing: 0.1rem;
+    color: #315B9E;
+}
+
+.contact h4 span {
+    color: #62617a;
+}
+
+.contact_option span {
+    padding-right: 1rem;
+    font-size: 150%;
+}
+
+.contact_option a {
+    text-decoration: none;
+}
+
+.contact_option div{
+    background-color: white;
+    margin: 0 0 1rem 1rem;
+    padding: 1rem 0;
+    width: 18rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.contact_option div:hover{
+    color: #EAEBFF;
+    background: #2d66b7;
+}
+
+.btn_up {
+    position: relative;
+    left: 1rem;
+}
+
+
+.btn_up .right {
+    -ms-transform: translateY(30px) translateX(25px) rotate(45deg);
+    transform: translateY(30px) translateX(25px) rotate(45deg);
+}
+
+.btn_up .left {
+    -ms-transform: translateY(35px) rotate(-45deg) translateX(6.5px);
+    transform: translateY(35px) rotate(-45deg) translateX(6.5px);
+}
+
+
+
+
+/* Section Contact */
+
+/*
+.contact_describe {
+    padding-left: 2.5rem;
+    padding-bottom: 20%;
+
+    top: 30%;
+    position: absolute;
+    color: #333333;
+    font-weight: 500;
+    background: lightslategray;
+
+}
+
+.contact_describe:after {
+    content: '';
+    position: absolute;
+    width:2px;
+    height: 65%;
     background: #FF9800;
     left: 1rem;
     top:0;
@@ -638,13 +727,15 @@ h3:after {
 .light_font {
     color: #EAEBFF;
 }
-
+*/
 /* Button up */
-
+/*
 .btn_up {
     margin-top: 2rem;
-    margin-left: -1rem;
-
+    margin-left: 15px;
+    position: absolute;
+    bottom: 60px;
+    left: 2px;
 }
 
 .btn_up .right {
@@ -656,21 +747,28 @@ h3:after {
     -ms-transform: translateY(35px) rotate(-45deg) translateX(6.5px);
     transform: translateY(35px) rotate(-45deg) translateX(6.5px);
 }
-
+*/
 /* Footer */
 
 footer {
     background-color: #132752;
     color: #EAEBFF;
     padding: 0.5rem;
+   position: relative;
+
 }
 
 footer p {
     text-align: center;
     font-weight: 300;
     font-size: 90%;
+
 }
 
 footer span {
     padding: 0 1.5rem;
+}
+
+section {
+    position: relative;
 }
