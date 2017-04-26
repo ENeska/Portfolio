@@ -61,18 +61,7 @@ function change_color() {
     }
 }
 
-$(function portfolio(){
 
-    $('.describe').on('mouseover', function () {
-        $(this).removeClass('close');
-        $(this).addClass('open');
-    });
-
-    $('.describe').on('mouseout', function () {
-        $(this).removeClass('open');
-        $(this).addClass('close');
-    });
-});
 
 $(function contact(){
 
