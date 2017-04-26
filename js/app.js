@@ -43,7 +43,7 @@ $('a[href*="#"]').click(function() {
     }
 });
 
-var h = document.documentElement.clientHeight;
+var h = window.innerHeight;
 
 window.onscroll = function() {change_color()};
 
@@ -51,7 +51,7 @@ function change_color() {
     var btn_menu = '.btn_menu span';
     var body = $('body');
 
-    if (document.body.scrollTop > h || document.documentElement.scrollTop > h) {
+    if (document.body.scrollTop >= h || document.documentElement.scrollTop >= h) {
         body.find(btn_menu).removeClass('color_light');
         body.find(btn_menu).addClass('color_dark');
 

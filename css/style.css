@@ -138,7 +138,6 @@
 }
 
 
-
 .btn_down:hover {
     cursor: pointer;
     background: linear-gradient(to bottom, #FF9800, #F57C00);
@@ -270,24 +269,11 @@ a:hover:after {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    position: relative;
+
 }
 
-header {
-    color: white;
-    position: absolute;
-    margin: 0 auto;
-    padding-bottom: 1rem;
-}
-
-header:before {
-    content: '';
-    position: absolute;
-    width:2px;
-    height: 100%;
-    background: #FF9800;
-    left: -8px;
-
+.contact {
+    top:50%;
 }
 
 h1 {
@@ -295,6 +281,7 @@ h1 {
     font-weight: 300;
     letter-spacing: 0.3rem;
     font-size: 3rem;
+    color: white;
 }
 
 h1 span {
@@ -306,20 +293,21 @@ h2 {
     font-weight: 400;
     letter-spacing: 0.3rem;
     margin: 0 0 2rem 0;
+    color: white;
 }
 
-h2 span {
+.main_page h2 span {
     color: #BDBDBD;
     font-weight: 300;
     font-size: 80%;
 }
 
-header p {
+.main_page  p {
     letter-spacing: 0.12rem;
-
+    color: white;
 }
 
-header p span {
+.main_page p span {
     color: #fff49e;
     font-size: 80%;
 }
@@ -562,13 +550,24 @@ h3:after {
 }
 
 .contact_describe {
-    background-color: green;
+
     width: 100%;
     height: auto;
-    top: 30%;
+
     position: absolute;
 
 }
+
+
+.contact_describe_high {
+    top:30%;
+}
+
+
+.contact_describe_low {
+    top:50%;
+}
+
 
 .contact_describe:after {
     content: '';
@@ -586,29 +585,29 @@ h3:after {
 }
 
 
-.contact p {
+#contact .contact p {
     font-size: 120%;
     padding: 0.5rem 0 1rem 0;
     letter-spacing: 0.1rem;
 }
 
-.contact span {
+#contact .contact  span {
     font-weight: 300;
     font-size: 80%;
     color: #3f7fb4;
 }
 
-.contact h4 {
+#contact .contact  h4 {
     font-size: 150%;
     letter-spacing: 0.1rem;
     color: #315B9E;
 }
 
-.contact h4 span {
+#contact .contact  h4 span {
     color: #62617a;
 }
 
-.contact_option span {
+.contact_option  span {
     padding-right: 1rem;
     font-size: 150%;
 }
@@ -636,6 +635,12 @@ h3:after {
     left: 1rem;
 }
 
+
+.btn_up2 {
+    position: relative;
+    left: 1rem;
+    margin-top: 5rem;
+}
 
 .btn_up .right {
     -ms-transform: translateY(30px) translateX(25px) rotate(45deg);
@@ -706,9 +711,7 @@ h3:after {
     text-decoration: none;
 }
 
-.dark_font {
-    color: #333333;
-}
+
 
 .contact_option div{
     background-color: white;
@@ -724,9 +727,7 @@ h3:after {
     background: #2d66b7;
 }
 
-.light_font {
-    color: #EAEBFF;
-}
+
 */
 /* Button up */
 /*
@@ -748,6 +749,13 @@ h3:after {
     transform: translateY(35px) rotate(-45deg) translateX(6.5px);
 }
 */
+
+.light_font {
+      color: #EAEBFF;
+  }
+.dark_font {
+      color: #333333;
+  }
 /* Footer */
 
 footer {
