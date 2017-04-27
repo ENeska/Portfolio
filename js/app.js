@@ -10,26 +10,6 @@ $('nav').find('a').click(function() {
 });
 
 
-
-$(function nav(){
-
-    $('.text').on('mouseover', function () {
-        $(this).find('h4').removeClass('normal_font');
-        $(this).find('h4').addClass('bold_font');
-
-        $(this).find('.text').removeClass('light');
-        $(this).addClass('dark')
-    });
-
-    $('.text').on('mouseout', function () {
-        $(this).find('h4').removeClass('bold_font');
-        $(this).find('h4').addClass('normal_font');
-
-        $(this).removeClass('dark');
-        $(this).addClass('light')
-    });
-});
-
 $('a[href*="#"]').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         var target = $(this.hash);
@@ -51,7 +31,7 @@ function change_color() {
     var btn_menu = '.btn_menu span';
     var body = $('body');
 
-    if (document.body.scrollTop >= h || document.documentElement.scrollTop >= h) {
+    if (document.body.scrollTop >= h-75 || document.documentElement.scrollTop >= h-75) {
 
         body.find(btn_menu).addClass('color_dark');
         body.find('.btn_menu').addClass('color');
@@ -62,20 +42,5 @@ function change_color() {
 
     }
 }
-
-
-$(function contact(){
-
-    $('.option').on('mouseover', function () {
-        $(this).find('a').removeClass('dark_font');
-        $(this).find('a').addClass('light_font');
-    });
-
-    $('.option').on('mouseout', function () {
-
-        $(this).find('a').removeClass('light_font');
-        $(this).find('a').addClass('dark_font');
-    });
-});
 
 

@@ -389,25 +389,25 @@ h3:after {
 
 .text {
     padding: 1.5rem 4rem 1.5rem 1.8rem;
-    transition: 0.7s;
+    transition: 0.8s;
     box-shadow: 3px 3px 9px -3px rgba(110, 110, 110, 0.49);
-    font-weight: 400;
+    font-weight: 300;
+}
+
+.text:hover {
+    background-color: rgba(255, 193, 52, 1);
+}
+
+.text:hover h4 {
+    font-weight: 600;
+}
+
+.text:hover p {
+    color: black;
 }
 
 .light {
     background-color: rgb(245, 246, 254);
-}
-
-.dark {
-    background-color: rgba(255, 193, 52, 1);
-}
-
-.bold_font {
-    font-weight: 700;
-}
-
-.normal_font {
-    font-weight: 500;
 }
 
 .text h4 {
@@ -415,6 +415,7 @@ h3:after {
     letter-spacing: 0.1rem;
     font-size: 1.8rem;
     color: #315B9E;
+    font-weight: 300;
 }
 
 .text p {
@@ -428,7 +429,6 @@ h3:after {
 }
 
 /* Section Portfolio ******************************/
-
 
 #portfolio {
     background-color: #f3f4f5;
