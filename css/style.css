@@ -1,10 +1,11 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     src: url('../css/fonts/Roboto-Thin.ttf') format('ttf');
     font-weight: 100;
     font-style: normal;
@@ -12,35 +13,35 @@
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     src: url('../css/fonts/Roboto-Light.ttf') format('ttf');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     src: url('../css/fonts/Roboto-Regular.ttf') format('tff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     src: url('../css/fonts/Roboto-Medium.ttf') format('tff');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     src: url('../css/fonts/Roboto-Bold.ttf') format('ttf');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Roboto';
+    font-family:'Roboto', sans-serif;
     src: url('../css/fonts/Roboto-Black.ttf') format('ttf');
     font-weight: 900;
     font-style: normal;
@@ -399,7 +400,7 @@ h3:after {
 }
 
 .text:hover h4 {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .text:hover p {
