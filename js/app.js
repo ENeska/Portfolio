@@ -52,15 +52,16 @@ function change_color() {
     var body = $('body');
 
     if (document.body.scrollTop >= h || document.documentElement.scrollTop >= h) {
-        body.find(btn_menu).removeClass('color_light');
+
         body.find(btn_menu).addClass('color_dark');
+        body.find('.btn_menu').addClass('color');
 
     } else {
         body.find(btn_menu).removeClass('color_dark');
-        body.find(btn_menu).addClass('color_light');
+        body.find('.btn_menu').removeClass('color');
+
     }
 }
-
 
 
 $(function contact(){

@@ -3,13 +3,8 @@
 
 @media only screen and (min-width: 1201px){
 
-    header {
+    .header {
         top: 50vh;
-        left: 40px;
-    }
-
-    .dwn {
-        left: 20px;
     }
 
     .picture img {
@@ -24,8 +19,18 @@
         font-size: 100%;
     }
 
+    .contact p {
+        letter-spacing: 0.09rem;
+    }
+
     .contact h4 {
-        padding: 5rem 0 3rem 0;
+        letter-spacing: 0.1rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .contact_option div{
+        padding: 1rem 0;
     }
 
     .btn_up {
@@ -35,13 +40,8 @@
 
 @media only screen and (max-width: 1200px){
 
-    header {
+    .header {
         top: 50vh;
-        left: 40px;
-    }
-
-    .dwn {
-        left: 20px;
     }
 
     .picture img {
@@ -56,8 +56,18 @@
         font-size: 100%;
     }
 
+    .contact p {
+        letter-spacing: 0.09rem;
+    }
+
     .contact h4 {
-        padding: 5rem 0 3rem 0;
+        letter-spacing: 0.1rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .contact_option div{
+        padding: 1rem 0;
     }
 
     .btn_up {
@@ -67,13 +77,8 @@
 
 @media (max-width: 992px){
 
-    header {
-        top: 43vh;
-        left: 40px;
-    }
-
-    .dwn {
-        left: 20px;
+    .header {
+        top: 50vh;
     }
 
     .picture img {
@@ -88,9 +93,20 @@
         font-size: 72%;
     }
 
-    .contact h4 {
-        padding: 3rem 0 3rem 0;
+    .contact p {
+        letter-spacing: 0.09rem;
     }
+
+    .contact h4 {
+        letter-spacing: 0.1rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .contact_option div{
+        padding: 1rem 0;
+    }
+
 
     .btn_up {
         margin-top: 6rem;
@@ -101,14 +117,10 @@
 
 @media  (max-width: 767px){
 
-    header {
-        top: 40vh;
-        left: 20px;
+    .header {
+        top: 45vh;
     }
 
-    .dwn {
-        left: 0;
-    }
 
     .picture img {
         width: 20%;
@@ -122,8 +134,18 @@
         font-size: 100%;
     }
 
+    .contact p {
+        letter-spacing: 0.09rem;
+    }
+
     .contact h4 {
-        padding: 3rem 0 3rem 0;
+        letter-spacing: 0.1rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .contact_option div{
+        padding: 1rem 0;
     }
 
     .btn_up {
@@ -134,13 +156,9 @@
 
 @media  (max-width: 576px){
 
-    header {
-        top: 30vh;
-        left: 0;
-    }
 
-    .dwn {
-        left: -20px;
+    .header {
+        top: 40vh;
     }
 
     .picture img {
@@ -155,8 +173,18 @@
         font-size: 80%;
     }
 
+    .contact p {
+        letter-spacing: 0.0rem;
+    }
+
     .contact h4 {
-        padding: 3rem 0 3rem 0;
+        letter-spacing: 0;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .contact_option div{
+        padding: 0.5rem 0;
     }
 
     .btn_up {
@@ -164,6 +192,61 @@
     }
 }
 
+@media  (max-width: 430px){
+
+    .header {
+        top: 25vh;
+    }
+
+
+    .contact p {
+        letter-spacing: 0;
+    }
+
+    .contact h4 {
+        letter-spacing: 0;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .contact_option div{
+        padding: 0.2rem 0;
+    }
+
+}
+
+@media  (max-width: 400px){
+
+    .header {
+        top: 15vh;
+    }
+
+
+    .contact p {
+        letter-spacing: 0;
+    }
+
+    .contact h4 {
+        letter-spacing: 0;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .contact_text p {
+        margin-bottom: 1rem;
+    }
+
+
+    h4 span {
+        display: none;
+    }
+
+    .contact_text p span {
+        display: none;
+    }
 
 
 
+
+
+}

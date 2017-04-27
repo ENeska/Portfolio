@@ -59,7 +59,7 @@
     cursor: pointer;
 }
 
-.btn_menu:hover {
+.btn_menu:hover, .color.btn_menu:hover {
 
     background: linear-gradient(to bottom, #ffb019, #F57C00);
 }
@@ -84,7 +84,7 @@
     height: 2px;
     width: 30px;
     position: absolute;
-    transition: all .35s ease;
+    transition: all .25s ease-out;
 }
 
 .btn_menu span:first-of-type {
@@ -105,12 +105,20 @@
     background-color: white;
 }
 
+.color.btn_menu {
+    background: #EAEBFF;
+    opacity: 0.8;
+}
+
 .color_dark {
     background-color: #393946;
 }
 
 /* Scroll down */
 
+.btn {
+    padding: 3rem 0 3rem 15px;
+}
 .btn_down span {
     width: 30px;
     height: 2px;
@@ -260,68 +268,73 @@ a:hover:after {
 
 /* Main page */
 
-.main_page {
+#main_page {
     background: linear-gradient(rgba(0,0,0, 0.2), rgba(0,0,0, 0.2)), url('../image/blue.jpg');
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
     min-height: 100vh;
-    margin: 0;
-    padding: 0;
-
 }
 
-.contact {
-    top:50%;
+header span {
+    letter-spacing: 0.3rem;
 }
 
 h1 {
-    margin: 0 0 2rem 0;
-    font-weight: 300;
-    letter-spacing: 0.3rem;
-    font-size: 3rem;
     color: white;
+    margin: 0;
+    padding: 0 0 1rem 0;
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 0.35rem;
 }
 
 h1 span {
-    color: #f2b632;
+    color: #f18c00;
     font-weight: 700;
+}
+
+.header {
+    color: white;
+    margin: 0 auto;
+}
+
+header {
+    padding-left: 15px;
+    padding-bottom: 15px;
+    margin-left: 15px;
+    border-left: 2px solid #f18c00;
+}
+
+h2 span {
+    color: #a0a0a0;
+    font-weight: 100;
+    font-size: 1rem;
 }
 
 h2 {
     font-weight: 400;
-    letter-spacing: 0.3rem;
-    margin: 0 0 2rem 0;
-    color: white;
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+    letter-spacing: 0.15rem;
 }
 
-.main_page h2 span {
-    color: #BDBDBD;
-    font-weight: 300;
-    font-size: 80%;
+.header p span {
+    color: #fffeb7;
+    font-size: 0.9rem;
 }
 
-.main_page  p {
-    letter-spacing: 0.12rem;
-    color: white;
+header p {
+    letter-spacing: 0.1rem;
+    padding-bottom: 0.5rem;
 }
 
-.main_page p span {
-    color: #fff49e;
-    font-size: 80%;
-}
-
-section {
-    border-bottom: 1px solid #dbd2ff;
-}
 
 /* Section Skills */
 
 #skills, #contact {
     background-color: #eaebff;
-    margin-bottom: 0;
-    position: relative;
 }
 
 .content {
@@ -333,6 +346,7 @@ section {
 
 .row_skills {
     margin: 0 15px;
+    padding-bottom: 4rem;
 }
 
 h3 {
@@ -354,10 +368,6 @@ h3:after {
     background-color: #FF9800;
     left: 2rem;
     top:7rem;
-}
-
-.row_skills {
-    padding-bottom: 4rem;
 }
 
 .picture {
@@ -393,7 +403,7 @@ h3:after {
 }
 
 .bold_font {
-    font-weight: 900;
+    font-weight: 700;
 }
 
 .normal_font {
@@ -424,6 +434,11 @@ h3:after {
     background-color: #f3f4f5;
 }
 
+.portfolio_row {
+    margin: 0;
+    padding: 0;
+}
+
 .portfolio_row img {
     box-shadow: 3px 3px 9px -1px rgba(110, 110, 110, 1);
     width: 100%;
@@ -436,19 +451,9 @@ h3:after {
     width: 100%;
     height: 100%;
     right:0;
-
     position: absolute;
     background: linear-gradient(rgba(11, 19, 24, 0.13), rgba(17,28,40, 0.13));
     overflow: hidden;
-}
-
-.image_portfolio {
-    margin: 0 0 1rem 0;
-}
-
-.portfolio_row {
-    margin: 0;
-    padding: 0;
 }
 
 .link_row {
@@ -463,9 +468,7 @@ h3:after {
 .link_row div {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-line-pack: center;
     align-content: center;
-    -ms-flex-align: center;
     align-items: center;
     padding: 0 1rem;
 }
@@ -473,7 +476,6 @@ h3:after {
 .describe_link  {
     font-size: 90%;
 }
-
 
 /* Section Portfolio Animation Describe Image */
 
@@ -491,8 +493,6 @@ h3:after {
     transition: 0.8s ease-in;
     -moz-transition: 0.8s ease-in;
 }
-
-
 
 .describe ul {
     position: relative;
@@ -527,18 +527,16 @@ h3:after {
 /* Section Portfolio Icons */
 
 .ion-eye, .ion-social-github {
-    padding: 0 1rem;
+    padding: 1rem 1rem;
     font-size: 2.5rem;
     opacity: 0.9;
     transition: 0.5s;
     color: #272734;
+    cursor: pointer;
 }
 
 .ion-eye:hover, .ion-social-github:hover {
     color: #FF9800;
-    cursor: pointer;
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
 }
 
 .ion-eye {
@@ -546,100 +544,13 @@ h3:after {
 }
 
 .ion-checkmark {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
-.contact_describe {
-
-    width: 100%;
-    height: auto;
-
-    position: absolute;
-
-}
-
-
-.contact_describe_high {
-    top:30%;
-}
-
-
-.contact_describe_low {
-    top:50%;
-}
-
-
-.contact_describe:after {
-    content: '';
-    position: absolute;
-    width:2px;
-    height: 65%;
-    background: #FF9800;
-    left: 1rem;
-    top:0;
-}
-
-.contact, .contact_option{
-    left: 30px;
-    position: relative;
-}
-
-
-#contact .contact p {
-    font-size: 120%;
-    padding: 0.5rem 0 1rem 0;
-    letter-spacing: 0.1rem;
-}
-
-#contact .contact  span {
-    font-weight: 300;
-    font-size: 80%;
-    color: #3f7fb4;
-}
-
-#contact .contact  h4 {
-    font-size: 150%;
-    letter-spacing: 0.1rem;
-    color: #315B9E;
-}
-
-#contact .contact  h4 span {
-    color: #62617a;
-}
-
-.contact_option  span {
-    padding-right: 1rem;
-    font-size: 150%;
-}
-
-.contact_option a {
-    text-decoration: none;
-}
-
-.contact_option div{
-    background-color: white;
-    margin: 0 0 1rem 1rem;
-    padding: 1rem 0;
-    width: 18rem;
-    cursor: pointer;
-    text-align: center;
-}
-
-.contact_option div:hover{
-    color: #EAEBFF;
-    background: #2d66b7;
-}
+/* Section Contact */
 
 .btn_up {
-    position: relative;
-    left: 1rem;
-}
-
-
-.btn_up2 {
-    position: relative;
-    left: 1rem;
-    margin-top: 5rem;
+    margin-left: 15px;
 }
 
 .btn_up .right {
@@ -652,71 +563,56 @@ h3:after {
     transform: translateY(35px) rotate(-45deg) translateX(6.5px);
 }
 
-
-
-
 /* Section Contact */
 
-/*
-.contact_describe {
-    padding-left: 2.5rem;
-    padding-bottom: 20%;
-
-    top: 30%;
-    position: absolute;
-    color: #333333;
-    font-weight: 500;
-    background: lightslategray;
-
+.contact {
+    margin-top: 15vh;
+    margin-left: 15px;
+    color: #393946;
+    border-left: 2px solid #FF9800;
 }
 
-.contact_describe:after {
-    content: '';
-    position: absolute;
-    width:2px;
-    height: 65%;
-    background: #FF9800;
-    left: 1rem;
-    top:0;
+.contact_text {
+    padding-left: 15px;
+    padding-bottom: 15px;
 }
 
 .contact p {
     font-size: 120%;
-    padding: 0.5rem 0 1rem 0;
-    letter-spacing: 0.1rem;
+    padding-bottom: 0.5rem;
 }
 
 .contact span {
     font-weight: 300;
     font-size: 80%;
     color: #3f7fb4;
+    letter-spacing: 0.2rem;
 }
 
 .contact h4 {
     font-size: 150%;
-    letter-spacing: 0.1rem;
     color: #315B9E;
 }
 
 .contact h4 span {
-    color: #62617a;
+    color: #757688;
+    font-size: 1.2rem;
 }
 
 .contact_option span {
     padding-right: 1rem;
     font-size: 150%;
+    color: #393946;
 }
 
 .contact_option a {
     text-decoration: none;
+    color: #393946;
 }
-
-
 
 .contact_option div{
     background-color: white;
-    margin: 0 0 1rem 1rem;
-    padding: 1rem 0;
+    margin: 0 0 1rem 2rem;
     width: 18rem;
     cursor: pointer;
     text-align: center;
@@ -727,56 +623,35 @@ h3:after {
     background: #2d66b7;
 }
 
-
-*/
-/* Button up */
-/*
-.btn_up {
-    margin-top: 2rem;
-    margin-left: 15px;
-    position: absolute;
-    bottom: 60px;
-    left: 2px;
+.image_portfolio  {
+    padding: 0 1rem 0 1rem;
 }
 
-.btn_up .right {
-    -ms-transform: translateY(30px) translateX(25px) rotate(45deg);
-    transform: translateY(30px) translateX(25px) rotate(45deg);
+.contact_option div:hover  span {
+    color: white;
 }
 
-.btn_up .left {
-    -ms-transform: translateY(35px) rotate(-45deg) translateX(6.5px);
-    transform: translateY(35px) rotate(-45deg) translateX(6.5px);
-}
-*/
-
-.light_font {
-      color: #EAEBFF;
-  }
-.dark_font {
-      color: #333333;
-  }
 /* Footer */
 
 footer {
     background-color: #132752;
     color: #EAEBFF;
     padding: 0.5rem;
-   position: relative;
+}
 
+footer ul {
+    list-style: none;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline-block;
+    padding-right: 1rem;
 }
 
 footer p {
     text-align: center;
     font-weight: 300;
     font-size: 90%;
-
 }
 
-footer span {
-    padding: 0 1.5rem;
-}
-
-section {
-    position: relative;
-}
