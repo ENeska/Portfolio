@@ -36,6 +36,37 @@
     .btn_up {
         margin-top: 10rem;
     }
+
+    .drop_down_nav ul li a {
+        font-size: 3rem;
+    }
+
+    .contact_text {
+        padding-left: 15px;
+    }
+
+    .contact {
+        border-left: 2px solid #FF9800;
+        margin-top: 15vh;
+    }
+
+
+
+    .contact_option div {
+        background-color: white;
+        margin: 0 0 1rem 2rem;
+        width: 18rem;
+    }
+
+    h3 {
+        font-size: 2.7rem;
+        padding: 3rem 0 4rem 15px;
+    }
+
+    h3:after {
+        top:7rem;
+    }
+
 }
 
 @media only screen and (max-width: 1200px){
@@ -73,6 +104,35 @@
     .btn_up {
         margin-top: 10rem;
     }
+
+    .drop_down_nav ul li a {
+        font-size: 3rem;
+    }
+
+    .contact_text {
+        padding-left: 15px;
+    }
+
+    .contact {
+        border-left: 2px solid #FF9800;
+        margin-top: 15vh;
+    }
+
+    .contact_option div {
+        background-color: white;
+        margin: 0 0 1rem 2rem;
+        width: 18rem;
+    }
+
+    h3 {
+        font-size: 2.7rem;
+        padding: 3rem 0 4rem 15px;
+    }
+
+    h3:after {
+        top:7rem;
+    }
+
 }
 
 @media (max-width: 992px){
@@ -111,6 +171,35 @@
     .btn_up {
         margin-top: 6rem;
     }
+
+    .drop_down_nav ul li a {
+        font-size: 2.8rem;
+    }
+
+    .contact_text {
+        padding-left: 15px;
+    }
+
+    .contact {
+        border-left: 2px solid #FF9800;
+        margin-top: 15vh;
+    }
+
+    .contact_option div {
+        background-color: white;
+        margin: 0 0 1rem 2rem;
+        width: 18rem;
+    }
+
+    h3 {
+        font-size: 2.7rem;
+        padding: 3rem 0 4rem 15px;
+    }
+
+    h3:after {
+        top:7rem;
+    }
+
 }
 
 
@@ -151,6 +240,35 @@
     .btn_up {
         margin-top: 4.5rem;
     }
+
+    .drop_down_nav ul li a {
+        font-size: 2.6rem;
+    }
+
+    .contact_text {
+        padding-left: 15px;
+    }
+
+    .contact {
+        border-left: 2px solid #FF9800;
+        margin-top: 15vh;
+    }
+
+    .contact_option div {
+        background-color: white;
+        margin: 0 0 1rem 2rem;
+        width: 18rem;
+    }
+
+    h3 {
+        font-size: 2.7rem;
+        padding: 3rem 0 4rem 15px;
+    }
+
+    h3:after {
+        top:7rem;
+    }
+
 }
 
 
@@ -190,6 +308,34 @@
     .btn_up {
         margin-top: 3rem;
     }
+
+    .drop_down_nav ul li a {
+        font-size: 2.1rem;
+    }
+
+    .contact_text {
+        padding-left: 15px;
+    }
+
+    .contact {
+        border-left: 2px solid #FF9800;
+        margin-top: 10vh;
+    }
+
+    .contact_option div {
+        background-color: white;
+        margin: 0 0 1rem 2rem;
+        width: 18rem;
+        }
+
+    h3 {
+        font-size: 2.6rem;
+        padding: 3rem 0 4rem 15px;
+    }
+
+    h3:after {
+        top:7rem;
+    }
 }
 
 @media  (max-width: 430px){
@@ -213,6 +359,38 @@
         padding: 0.2rem 0;
     }
 
+    .drop_down_nav ul li a {
+        font-size: 1.8rem;
+        margin-left: 1rem;
+    }
+
+    .contact_text {
+        padding-left: 0;
+    }
+
+    .contact {
+        border-left: 0;
+        margin-top: 7vh;
+    }
+
+    .contact_option div {
+        background-color: white;
+        margin: 0 0 1rem 1rem;
+        width: 15rem;
+    }
+
+    h3 {
+        font-size: 2.3rem;
+        padding: 2.5rem 0 3rem 15px;
+    }
+
+    .btn_down, .btn_up {
+        display: none;
+    }
+
+    h3:after {
+        top:6rem;
+    }
 }
 
 @media  (max-width: 400px){
@@ -245,10 +423,42 @@
         display: none;
     }
 
-    .btn_down {
+    .btn_down, .btn_up {
         display: none;
+    }
+    .drop_down_nav ul li a {
+        font-size: 1.6rem;
+        margin-left: 1rem;
     }
 
 
+    .contact_text {
+        padding-left: 0;
+    }
+
+    .contact {
+        border-left: 0;
+        margin-top: 5vh;
+    }
+
+    .contact_option div {
+        background-color: white;
+        margin: 0 0 1rem 1rem;
+        width: 15rem;
+    }
+
+    .contact_option {
+        padding-bottom: 3rem;
+    }
+
+    h3 {
+        font-size: 2.3rem;
+        padding: 2.4rem 0 2.8rem 15px;
+    }
+
+    h3:after {
+        top:6rem;
+
+    }
 
 }

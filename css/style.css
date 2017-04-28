@@ -146,12 +146,10 @@
     transition-property:  all;
 }
 
-
 .btn_down:hover {
     cursor: pointer;
     background: linear-gradient(to bottom, #FF9800, #F57C00);
 }
-
 
 /* Menu  ul li*/
 .drop_down_nav {
@@ -220,7 +218,7 @@
 .drop_down_nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 3rem;
+
     font-weight: 300;
     position: relative;
     padding-bottom: 0.5rem;
@@ -351,8 +349,6 @@ header p {
 }
 
 h3 {
-    font-size: 2.7rem;
-    padding: 3rem 0 4rem 15px;
     font-weight: 500;
     letter-spacing: 0.15rem;
     color: #393946;
@@ -368,7 +364,6 @@ h3:after {
     height: 2px;
     background-color: #FF9800;
     left: 2rem;
-    top:7rem;
 }
 
 .picture {
@@ -567,14 +562,11 @@ h3:after {
 /* Section Contact */
 
 .contact {
-    margin-top: 15vh;
     margin-left: 15px;
     color: #393946;
-    border-left: 2px solid #FF9800;
 }
 
 .contact_text {
-    padding-left: 15px;
     padding-bottom: 15px;
 }
 
@@ -613,8 +605,6 @@ h3:after {
 
 .contact_option div{
     background-color: white;
-    margin: 0 0 1rem 2rem;
-    width: 18rem;
     cursor: pointer;
     text-align: center;
 }
