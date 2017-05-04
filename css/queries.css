@@ -7,6 +7,10 @@
         top: 50vh;
     }
 
+    .btn_menu {
+        top: 30px;
+    }
+
     .picture img {
         width: 60%;
     }
@@ -75,6 +79,10 @@
         top: 50vh;
     }
 
+    .btn_menu {
+        top: 30px;
+    }
+
     .picture img {
         width: 60%;
     }
@@ -139,6 +147,10 @@
 
     .header {
         top: 50vh;
+    }
+
+    .btn_menu {
+        top: 30px;
     }
 
     .picture img {
@@ -210,6 +222,10 @@
         top: 45vh;
     }
 
+    .btn_menu {
+        top: 30px;
+    }
+
 
     .picture img {
         width: 20%;
@@ -279,6 +295,10 @@
         top: 40vh;
     }
 
+    .btn_menu {
+        top: 30px;
+    }
+
     .picture img {
         width: 20%;
     }
@@ -344,6 +364,10 @@
         top: 25vh;
     }
 
+    .btn_menu {
+        top: 25px;
+    }
+
 
     .contact p {
         letter-spacing: 0;
@@ -397,6 +421,10 @@
 
     .header {
         top: 15vh;
+    }
+
+    .btn_menu {
+        top: 20px;
     }
 
 
